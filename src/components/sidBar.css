@@ -1,0 +1,138 @@
+.ff{
+     background-image: url('../image/bg-sidebar-desktop.svg');
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size:contain;
+display: flex !important;
+height:700px !important;
+ 
+width: 300px !important;
+}
+
+.im{
+    display: flex !important;
+}
+.circular-element {
+   margin-top:3px;
+    width: 30px;
+    height: 30px;
+  /* Green background color */
+  border: 1px solid  hsl(206, 94%, 87%);
+    border-radius: 50%; /* Creates a circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .circular-element-true {
+    margin-top:3px;
+     width: 30px;
+     height: 30px;
+     background-color: hsl(206, 94%, 87%);
+
+   /* Green background color */
+   border: 1px solid  hsl(206, 94%, 87%);
+     border-radius: 50%; /* Creates a circular shape */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+  
+  .number {
+    color: white; /* Text color */
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight:bold; /* Make the number bold */
+  }
+
+  .number-true {
+    color: white; /* Text color */
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight:bold; /* Make the number bold */
+  }
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.8em;
+ 
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+label{
+  cursor: pointer;
+
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: hsl(213, 96%, 18%);
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3em;
+  width: 1.3em;
+  inset: 0;
+  margin: 3px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:checked + .slider {
+  background: hsl(213, 96%, 18%);
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #0974f1;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.6em);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .ff{
+     
+        background-image: url('../image/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:right;
+    width: 100% !important;
+        height: 130px !important;
+    }
+    
+}
